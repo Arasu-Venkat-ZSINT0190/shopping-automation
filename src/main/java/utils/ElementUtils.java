@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class ElementUtils {
     private final WebDriver driver;
-    protected final WebDriverWait wait;
+    private final WebDriverWait wait;
 
     public ElementUtils(WebDriver driver) {
         this.driver = driver;

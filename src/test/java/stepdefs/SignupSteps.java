@@ -31,8 +31,8 @@ public class SignupSteps {
         signupPage.clickRegisterButton();
     }
 
-    @Then("user should see the username {string} displayed on the dashboard")
-    public void user_should_see_username(String expectedUsername) {
+    @Then("user should see the username after signup {string} displayed on the dashboard")
+    public void user_should_see_username_after_signup(String expectedUsername) {
         String actualUsername = signupPage.getLoggedInUsername();
         Assert.assertTrue("Expected username not found on dashboard!", actualUsername.contains(expectedUsername));
     }
